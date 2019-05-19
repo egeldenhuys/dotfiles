@@ -1,0 +1,13 @@
+compile_commands.json
+*.idea
+*.log
+*.out
+*.synctex.gz
+*.aux
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmakea

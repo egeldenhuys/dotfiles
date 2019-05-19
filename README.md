@@ -1,0 +1,6 @@
+# dotfiles
+
+## Usage
+```
+$ ./link.sh
+```

@@ -1,0 +1,64 @@
+# System
+acpi
+networkmanager
+network-manager-applet
+fuse
+gvfs
+xorg
+xorg-xinit
+termite
+yubikey-personalization
+libu2f-host
+gnome-keyring
+alsa-utils
+pulseaudio
+openssh
+sshfs
+borg
+rclone
+wget
+tor
+zip
+unzip
+
+# Development
+git
+base-devel
+yasm
+gdb
+clang
+cmake
+python-pip
+
+# Fonts
+ttf-dejavu
+powerline-fonts
+
+# Window Managers
+dmenu
+i3
+xfce4
+
+# Applications
+firefox
+thunar
+thunar-volman
+thunar-archive-plugin
+wireshark-gtk
+mousepad
+tree
+vim
+atom
+emacs
+chromium
+firefox
+okular
+pepper-flash
+lynx
+calc
+libreoffice
+
+# Virtualbox
+virtualbox-guest-modules-arch
+virtualbox-guest-utils
+virtualbox

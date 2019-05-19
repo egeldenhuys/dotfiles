@@ -1,0 +1,61 @@
+"*":
+  "atom-clang":
+    defaultCFlags: [
+      "-std=c99"
+      "-Wall"
+      "-Wextra"
+      "-D_REENTRANT"
+      "-D_GNU_SOURCE"
+      "-I /opt/local/include"
+      "-I /home/user/my_project"
+    ]
+    defaultCXXFlags: [
+      "-std=c++11"
+      "-Wall"
+      "-Wextra"
+      "-D_REENTRANT"
+      "-D_GNU_SOURCE"
+      "-fexceptions"
+      "-I/usr/local/lib/wx/include/gtk3-unicode-3.0"
+      "-I/usr/local/include/wx-3.0"
+      "-D_FILE_OFFSET_BITS=64"
+      "-DWXUSINGDLL"
+      "-D__WXGTK__"
+      "-pthread"
+      "-I/home/evert/github/prothesis-2"
+    ]
+    includeDeprecated: false
+    linterEnabled: true
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  core:
+    disabledPackages: [
+      "language-gfm"
+      "metrics"
+      "exception-reporting"
+      "julia-client"
+    ]
+    telemetryConsent: "no"
+  editor:
+    scrollPastEnd: true
+    scrollSensitivity: 80
+  "julia-client":
+    firstBoot: false
+    uiOptions:
+      enableMenu: true
+      enableToolBar: true
+  "linter-ui-default": {}
+  "spell-check":
+    excludedScopes: [
+      "text.md"
+    ]
+    locales: [
+      "en-AU"
+    ]
+  tabLength: 4
+  "tool-bar":
+    position: "Left"
+  "uber-juno":
+    disable: true
+  welcome:
+    showOnStartup: false
