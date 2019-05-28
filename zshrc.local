@@ -341,6 +341,7 @@ source ~/.gpg-ssh-agent.sh
 #  exec startx
 #fi
 
+export LC_TIME=en_GB
 export PATH=$PATH:/opt/gradle/gradle-4.9/bin
 export PATH=$PATH:/opt/pycharm-2017.3.3/bin
 export PATH=$PATH:/home/evert/.local/bin
