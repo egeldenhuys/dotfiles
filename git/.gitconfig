@@ -5,4 +5,4 @@
 	helper = cache --timeout=3600
 [core]
 	autocrlf = input
-	excludesfile = /home/evert/.global_gitignore
+	excludesfile = /home/evert/.gitignore_global
