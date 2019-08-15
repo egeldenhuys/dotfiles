@@ -1,0 +1,4 @@
+{
+    "latex-workshop.view.pdf.viewer": "browser",
+    "editor.rulers": [80, 120]
+}

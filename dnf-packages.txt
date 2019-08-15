@@ -1,0 +1,12 @@
+
+sshfs
+
+git
+vim
+pass
+
+latexmk
+
+telegram-desktop
+snapd
+    # spotify
