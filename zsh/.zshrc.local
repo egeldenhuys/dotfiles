@@ -336,24 +336,5 @@ fi
 ## END OF FILE #################################################################
 
 source ~/.gpg-ssh-agent.sh
-
-#if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
-#  exec startx
-#fi
-
-export LC_TIME=en_GB
-export PATH=$PATH:/opt/gradle/gradle-4.9/bin
-export PATH=$PATH:/opt/pycharm-2017.3.3/bin
 export PATH=$PATH:/home/evert/.local/bin
-export PATH=$PATH:/home/evert/.gem/ruby/2.5.0/bin
-export PATH=$PATH:/opt/gradle/gradle-4.6/bin
-export PATH=$PATH:/opt/clion-2017.3.3/bin
-export PATH=$PATH:/opt/idea-IC-173.4548.28/bin
-export PATH=$PATH:/home/evert/github/julia-1.0.1/build/usr/bin
 
-# User specific aliases and functions
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0
-export PDSH_RCMD_TYPE=ssh
-
-export PATH=$PATH:/home/evert/opt/hadoop/bin
-export PATH=$PATH:/home/evert/opt/spark/bin
