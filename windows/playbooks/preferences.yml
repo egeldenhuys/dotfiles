@@ -13,6 +13,84 @@
       data: 2
       type: dword
 
+# https://github.com/clong/MakeWindows10GreatAgain/blob/master/MakeWindows10GreatAgain.reg
+
+  - name: Disable Cortana (Windows search still remains)
+    win_regedit:
+      path: HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search
+      name: AllowCortana
+      data: 0
+      type: dword
+
+  - name: Don't reboot when users are logged in for Windows updates
+    win_regedit:
+      path: HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU
+      name: NoAutoRebootWithLoggedOnUsers
+      data: 1
+      type: dword
+
+  - name: Disable Microsoft.com accounts
+    win_regedit:
+      path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+      name: NoConnectedUser
+      data: 3
+      type: dword
+
+  - name: Show all file extensions
+    win_regedit:
+      path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+      name: HideFileExt
+      data: 0
+      type: dword
+
+  - name: Set explorer to open to "This PC" for new windows
+    win_regedit:
+      path: HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+      name: LaunchTo
+      data: 1
+      type: dword
+
+  - name: Show hidden files (not including OS files)
+    win_regedit:
+      path: HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+      name: Hidden
+      data: 1
+      type: dword
+
+  - name: Disable web search
+    win_regedit:
+      path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Search
+      name: BingSearchEnabled
+      data: 0
+      type: dword
+    
+  - name: Disable DeviceHistoryEnabled
+    win_regedit:
+      path: HKCU:\Software\Microsoft\Windows\CurrentVersion\Search
+      name: DeviceHistoryEnabled
+      data: 0
+      type: dword
+
+  - name: Disable DisableTailoredExperiencesWithDiagnosticData
+    win_regedit:
+      path: HKCU:\Software\Microsoft\Windows\CloudContent
+      name: DisableTailoredExperiencesWithDiagnosticData
+      data: 1
+      type: dword
+
+  - name: Disable DisableThirdPartySuggestions
+    win_regedit:
+      path: HKCU:\Software\Microsoft\Windows\CloudContent
+      name: DisableThirdPartySuggestions
+      data: 1
+      type: dword
+
+  - name: Disable DisableWindowsSpotlightFeatures
+    win_regedit:
+      path: HKCU:\Software\Microsoft\Windows\CloudContent
+      name: DisableWindowsSpotlightFeatures
+      data: 1
+      type: dword
+
   - name: Restart Windows Explorer
     win_shell: Stop-Process -ProcessName explorer
-  
