@@ -1,0 +1,9 @@
+---
+- name: Install Utilities
+  hosts: windows
+
+  tasks:
+  - name: Install Fork git client
+    win_chocolatey:
+      name: git-fork
+      state: present

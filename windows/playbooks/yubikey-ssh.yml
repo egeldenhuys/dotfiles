@@ -1,0 +1,21 @@
+---
+- name: Use Yubikey for SSH authentication
+  hosts: windows
+
+  tasks:
+  - name: Install Gpg4Win
+    win_chocolatey:
+      name: gpg4win
+      state: present
+
+  - name: Install wsl-ssh-pageant-gui
+    win_chocolatey:
+      name: wsl-ssh-pageant-gui
+      state: present
+
+  - name: Set SSH_AUTH_SOCK environment variable
+    ansible.windows.win_environment:
+      state: present
+      name: SSH_AUTH_SOCK
+      value: \\.\pipe\ssh-pageant
+      level: user

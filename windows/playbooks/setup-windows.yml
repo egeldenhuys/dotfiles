@@ -1,0 +1,7 @@
+---
+- name: configure Windows
+  hosts: windows
+
+  tasks:
+  - name: "combine taskbar buttons: never"
+  
