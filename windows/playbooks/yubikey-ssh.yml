@@ -20,27 +20,7 @@
       value: \\.\pipe\ssh-pageant
       level: user
 
-  - name: Install NSSM (Non Sucking Service Manager)
-    win_chocolatey:
-      name: nssm
-      state: present
-
   - name: Create directory 'C:\wsl-ssh-pageant' for ssh-agent.sock
     win_file:
       path: C:\wsl-ssh-pageant
       state: directory
-
-  - name: Install service for wsl-ssh-pageant
-    community.windows.win_nssm:
-      name: wsl-ssh-pageant
-      application: C:\ProgramData\chocolatey\bin\wsl-ssh-pageant.exe
-      arguments: --wsl C:\wsl-ssh-pageant\ssh-agent.sock --winssh ssh-pageant
-      state: absent
-
-  - name: Configure and start the wsl-ssh-pageant service
-    ansible.windows.win_service:
-      name: wsl-ssh-pageant
-      start_mode: auto
-      state: started
-      # desktop_interact: yes
-      username: Evert
